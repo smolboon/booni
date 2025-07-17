@@ -6,8 +6,8 @@ authors = ["booni team"]
 license = "FSL-1.1-MIT"
 readme = "README.md"
 packages = [{include = "core", from = "."}]
-repository = "https://github.com/your-username/booni"
-homepage = "https://github.com/your-username/booni"
+repository = "https://github.com/smolboon/booni"
+homepage = "https://github.com/smolboon/booni"
 keywords = ["ai", "llm"]
 
 [[tool.poetry.source]]
