@@ -21,7 +21,7 @@ from core.templates.registry import (
 ARCHITECTURE_STEP_NAME = "Project architecture"
 WARN_SYSTEM_DEPS = ["docker", "kubernetes", "microservices"]
 WARN_FRAMEWORKS = ["next.js", "vue", "vue.js", "svelte", "angular"]
-WARN_FRAMEWORKS_URL = "https://github.com/Pythagora-io/gpt-pilot/wiki/Using-GPT-Pilot-with-frontend-frameworks"
+WARN_FRAMEWORKS_URL = "#"
 
 log = get_logger(__name__)
 

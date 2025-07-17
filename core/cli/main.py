@@ -213,9 +213,9 @@ async def start_new_project(sm: StateManager, ui: UIBase) -> bool:
     return project_state is not None
 
 
-async def run_pythagora_session(sm: StateManager, ui: UIBase, args: Namespace):
+async def run_booni_session(sm: StateManager, ui: UIBase, args: Namespace):
     """
-    Run a Pythagora session.
+    Run a booni session.
 
     :param sm: State manager.
     :param ui: User interface.
@@ -226,7 +226,7 @@ async def run_pythagora_session(sm: StateManager, ui: UIBase, args: Namespace):
     if not args.no_check:
         if not await llm_api_check(ui):
             await ui.send_message(
-                "Pythagora cannot start because the LLM API is not reachable.",
+                "booni cannot start because the LLM API is not reachable.",
                 source=pythagora_source,
             )
             return False
@@ -301,14 +301,14 @@ async def async_main(
     atexit.register(sync_cleanup, ui)
 
     try:
-        success = await run_pythagora_session(sm, ui, args)
+        success = await run_booni_session(sm, ui, args)
     finally:
         await cleanup(ui)
 
     return success
 
 
-def run_pythagora():
+def run_booni():
     ui, db, args = init()
     if not ui or not db:
         return -1
@@ -317,4 +317,4 @@ def run_pythagora():
 
 
 if __name__ == "__main__":
-    sys.exit(run_pythagora())
+    sys.exit(run_booni())

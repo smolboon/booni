@@ -151,7 +151,7 @@ class TechLead(RelevantFilesMixin, BaseAgent):
         )
 
         if response.button == "end" or response.cancelled or not response.text:
-            await self.ui.send_message("Thank you for using Pythagora!", source=pythagora_source)
+            await self.ui.send_message("Thank you for using booni!", source=pythagora_source)
             return AgentResponse.exit(self)
 
         feature_description = response.text

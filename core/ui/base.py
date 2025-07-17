@@ -462,7 +462,7 @@ class UIBase:
         raise NotImplementedError()
 
 
-pythagora_source = UISource("Pythagora", "pythagora")
+pythagora_source = UISource("booni", "booni")
 success_source = UISource("Congratulations", "success")
 
 

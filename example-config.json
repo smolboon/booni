@@ -1,5 +1,5 @@
 {
-  // Configuration for the LLM providers that can be used. Pythagora supports
+  // Configuration for the LLM providers that can be used. booni supports
   // OpenAI, Azure, Anthropic and Groq. OpenRouter and local LLMs (such as LM-Studio)
   // also work, you can use "openai" provider to define these.
   "llm": {
@@ -39,17 +39,17 @@
       "temperature": 0.5
     }
   },
-  // Logging configuration outputs debug log to "pythagora.log" by default. If you set this to null,
+  // Logging configuration outputs debug log to "booni.log" by default. If you set this to null,
   // the log will be sent to stdout.
   "log": {
     "level": "DEBUG",
     "format": "%(asctime)s %(levelname)s [%(name)s] %(message)s",
-    "output": "pythagora.log"
+    "output": "booni.log"
   },
-  // Database to use. Pythagora uses asyncio so asyncio-compatible database engine should be specified.
+  // Database to use. booni uses asyncio so asyncio-compatible database engine should be specified.
   // If "debug_sql" is set to True, all SQL queries will be logged.
   "db": {
-    "url": "sqlite+aiosqlite:///data/database/pythagora.db",
+    "url": "sqlite+aiosqlite:///data/database/booni.db",
     "debug_sql": false
   },
   "ui": {
@@ -57,10 +57,10 @@
   },
   "fs": {
     "type": "local",
-    // Root directory of the workspace. Pythagora will store all projects under this directory by default.
+    // Root directory of the workspace. booni will store all projects under this directory by default.
     "workspace_root": "workspace",
     // Directories, files and patterns to ignore when examining the files in the project.
-    // Note that Pythagora already ignores all binary (non-text) files by default.
+    // Note that booni already ignores all binary (non-text) files by default.
     "ignore_paths": [
       ".git",
       ".gpt-pilot",

@@ -12,7 +12,7 @@ from core.telemetry import telemetry
 ANALYZE_THRESHOLD = 1500
 # URL to the wiki page with tips on how to write a good project description
 INITIAL_PROJECT_HOWTO_URL = (
-    "https://github.com/Pythagora-io/gpt-pilot/wiki/How-to-write-a-good-initial-project-description"
+    "#"
 )
 SPEC_STEP_NAME = "Create specification"
 

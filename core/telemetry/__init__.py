@@ -220,7 +220,7 @@ class Telemetry:
         Record crash diagnostics.
 
         The formatted stack trace only contains frames from the `core` package
-        of gpt-pilot.
+        of booni.
 
         :param exception: exception that caused the crash
         :param end_result: end result of the application (default: "failure")

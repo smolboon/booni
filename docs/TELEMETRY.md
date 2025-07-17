@@ -13,7 +13,7 @@ The telemetry data we collect includes:
 - **User Inputs**: The number of times you provide input to the tool.
 - **Operating System**: The operating system you are using (and Linux distro if applicable).
 - **Python Version**: The version of Python you are using.
-- **GPT Pilot Version**: The version of Pythagora you are using.
+- **booni Version**: The version of booni you are using.
 - **LLM Model**: LLM model(s) used for the session.
 - **Time**: How long it took to generate a project.
 - **Initial prompt**: App description used to create app (after Specification Writer Agent).
@@ -39,9 +39,9 @@ Your privacy is important to us. The data collected is purely for internal analy
 
 ### Opting Out
 
-We believe in transparency and control. If you prefer not to send telemetry data, you can opt-out at any time by setting `telemetry.enabled` to `false` in your `~/.gpt-pilot/config.json` configuration file.
+We believe in transparency and control. If you prefer not to send telemetry data, you can opt-out at any time by setting `telemetry.enabled` to `false` in your configuration file.
 
-After you update this setting, Pythagora will no longer collect telemetry data from your machine.
+After you update this setting, booni will no longer collect telemetry data from your machine.
 
 ### Questions and Feedback
 If you have questions about our telemetry practices or would like to provide feedback, please open an issue in our repository, and we will be happy to engage with you.

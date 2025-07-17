@@ -51,7 +51,7 @@ class LegacyDatabaseImporter:
             self.conn = conn
             is_valid = await self.verify_schema()
             if not is_valid:
-                raise ValueError(f"Database {self.dbpath} doesn't look like a GPT-Pilot database")
+                raise ValueError(f"Database {self.dbpath} doesn't look like a supported database")
 
             apps = await self.get_apps()
             info = {}
